@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D979A8C32150465100A106B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979A8C22150465100A106B4 /* AppDelegate.swift */; };
-		D979A8C52150465100A106B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979A8C42150465100A106B4 /* ViewController.swift */; };
 		D979A8C82150465100A106B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D979A8C62150465100A106B4 /* Main.storyboard */; };
 		D979A8CA2150465400A106B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D979A8C92150465400A106B4 /* Assets.xcassets */; };
 		D979A8CD2150465400A106B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D979A8CB2150465400A106B4 /* LaunchScreen.storyboard */; };
 		D979A8D82150465400A106B4 /* FlixAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979A8D72150465400A106B4 /* FlixAppTests.swift */; };
 		D979A8E32150465400A106B4 /* FlixAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979A8E22150465400A106B4 /* FlixAppUITests.swift */; };
+		D979A8F12150506400A106B4 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979A8F02150506400A106B4 /* NowPlayingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		D979A8BF2150465100A106B4 /* FlixApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D979A8C22150465100A106B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D979A8C42150465100A106B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D979A8C72150465100A106B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D979A8C92150465400A106B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D979A8CC2150465400A106B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		D979A8DE2150465400A106B4 /* FlixAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D979A8E22150465400A106B4 /* FlixAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixAppUITests.swift; sourceTree = "<group>"; };
 		D979A8E42150465400A106B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D979A8F02150506400A106B4 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		D979A8C12150465100A106B4 /* FlixApp */ = {
 			isa = PBXGroup;
 			children = (
+				D979A8F02150506400A106B4 /* NowPlayingViewController.swift */,
 				D979A8C22150465100A106B4 /* AppDelegate.swift */,
-				D979A8C42150465100A106B4 /* ViewController.swift */,
 				D979A8C62150465100A106B4 /* Main.storyboard */,
 				D979A8C92150465400A106B4 /* Assets.xcassets */,
 				D979A8CB2150465400A106B4 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D979A8C52150465100A106B4 /* ViewController.swift in Sources */,
+				D979A8F12150506400A106B4 /* NowPlayingViewController.swift in Sources */,
 				D979A8C32150465100A106B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
