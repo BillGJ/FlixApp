@@ -26,7 +26,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="203" id="EVW-7x-Y0D" customClass="MovieCell" customModule="FlixApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EVW-7x-Y0D" id="UPJ-DI-sSE" customClass="MovieCell" customModule="FlixApp">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EVW-7x-Y0D" id="UPJ-DI-sSE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="202.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -51,14 +51,25 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="overviewLabel" destination="9MZ-wm-Ofo" id="8GN-5c-CSH"/>
+                                            <outlet property="posterImageView" destination="ObL-T7-vWC" id="JON-5v-GOx"/>
+                                            <outlet property="titleLabel" destination="1QU-MB-v6a" id="91w-Pj-beD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-kp-5EI">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activIndic" destination="fN8-kp-5EI" id="TUR-FC-cdl"/>
                         <outlet property="tableView" destination="Wg5-w2-LGc" id="61n-aB-F78"/>
                     </connections>
                 </viewController>
